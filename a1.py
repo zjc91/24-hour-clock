@@ -1,3 +1,5 @@
+#this was written in Python 3.0
+
 def seconds_difference(time_1, time_2):
     """ (number, number) -> number
 
@@ -74,9 +76,6 @@ def to_24_hour_clock(hours):
 
     return int(hours % 24)
 
-
-### Write your get_hours function definition here:
-
 def get_hours (seconds):
     """ (int) -> int
 
@@ -94,8 +93,6 @@ def get_hours (seconds):
 
     return to_24_hour_clock(seconds/3600)
 
-### Write your get_minutes function definition here:
-
 def get_minutes (seconds):
     """The parameter is a number of seconds since midnight.
     Return the number of minutes that have elapsed since midnight
@@ -110,8 +107,6 @@ def get_minutes (seconds):
     """
 
     return int(((seconds/3600)%24 - get_hours(seconds))*60)
-
-### Write your get_seconds function definition here:
 
 def get_seconds (seconds):
     """The parameter is a number of seconds since midnight.
